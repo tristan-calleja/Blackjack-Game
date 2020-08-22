@@ -1,28 +1,27 @@
-# sei23-project1-blackjack
+# BLACKJACK GAME
 
-MVP:
+## MVP:
 • javascript to pick cards, display them and count current
 • create cards using html and css
 
-MAIN FUNCTIONS TO BE USED:
+## MAIN FUNCTIONS TO BE USED:
 • random for cards to be picked
 • conditions (a lot) 
 Stand = don’t pick - Deal=pick - 21 = game won, etc.
 • event listeners
 
-FURTHERS:
+## FURTHERS:
 • get the player’s name and use it
 • Keep count of games played
 • set intervals so that there is a bit of time between turns message display
 • Music when you win a certain number of turns.
 
-GOAL:
+## GOAL:
 • this game will help me understand CSS better
 • this game will help me review and shore up my javascript basics
 
 
-
-/////// FIRST STEPS ////////
+## /////// FIRST STEPS ////////
 
 The first thing I did was drawing a sketch of the game. This helped get the layout of my game, even though there were iterations afterwards.
 
@@ -80,7 +79,7 @@ Finally, from the gameflow I defined my variables:
 One thing I added later was the gamePlay var to prevent player from clicking on buttons when the player shouldn't.
 
 
-/////// HTML ////////
+## /////// HTML ////////
 
 That's the first part I focused on.
 From my sketch I had an idea of the layout I wanted the game to have and once completed I did very few iterations.
