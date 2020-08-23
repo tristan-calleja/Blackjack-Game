@@ -18,91 +18,126 @@
 </head>
 
 <body>
-    
+
+<div class="page__wrap">
+  <div class="background h-5">
     <div class="container">
-        <div class="containergradient">
-
-            <div>
-                <!-- HEADER/TITLE -->
-                <h1>$$$ BLACKJACK $$$</h1>
-            </div>
-            
-            <div class="message__box">
-                <!-- MESSAGE BOX -->
-                <h2 id="messageBox"></h2>
-            </div>
-            
-            <div class="current__bet">
-                <!-- CURRENT BET -->
-                <h3 id="currentBet"></h3>
-
-            </div>
-            
-            <div class="titles">
-                <!-- TITLES -->
-                <div>
-                    <h3>PLAYER CARDS</h3>
-                    <h3 id="playerPoints"></h3>
-                </div>
-                <div>
-                    <h3>DEALER CARDS</h3>
-                    <h3 id="dealerPoints"></h3>
-                </div>
-            </div>
-
-            <div class="cards">
-                <!-- CARDS -->
-                <div class="player__pannel">
-                        <img src="" alt="" class="playerHand">
-                </div>
-                <div class="dealer__pannel">
-                        <img src="" alt="" class="dealerHand">
-                </div>
-            </div>
-
-            <div class="buttons">
-                <!-- BUTTONS -->
-                    <div>
-                        <button type="button" class="action__buttons btn btn-primary btn-lg" onclick="hit()">HIT</button>
-                    </div>
-                    <div>
-                        <button type="button" class="action__buttons btn btn-primary btn-lg" onclick="stand()">STAND</button>
-                    </div>
-            </div>
-            
-            <div class="bank">
-                <!-- YOUR BANK -->
-                    <div>
-                        <button type="button" class="bank__buttons btn btn-primary btn-lg button5" onclick="addFiveToBet()">5$</button>
-                    </div>
-                    <div>
-                        <button type="button" class="bank__buttons btn btn-primary btn-lg button50" onclick="addFithtyToBet()">50$</button>
-                    </div>
-                    <div>
-                        <button type="button" class="bank__buttons btn btn-primary btn-lg button100" onclick="addOneHundredToBet()">100$</button>
-                    </div>
-                    <div>
-                        <button type="button" class="bank__buttons btn btn-primary btn-lg button500" onclick="addFiveHundredToBet()">500$</button>
-                    </div>
-                    <div>
-                        <button type="button" class="bet__button btn btn-primary btn-lg" onclick="startGame()">BET</button>
-                        <button type="button" class="reset__button btn btn-primary btn-sm" onclick="resetCurrentBet()">RESET</button>
-                    </div>
-                    <div class="bank__total">
-                        <p>Money in Bank:</p>
-                        <p id="totalInBank"></p>
-                    </div>
-            </div>
-            
-            <footer div class="footer">
-                <!-- FOOTER -->
-                <p>A game created by god knows who and brought to you by Tristan Calleja.<br/>
-                PS: Did you know that the first written reference to blackjack is found in a book by the Spanish author Miguel de Cervantes, most famous for writing Don Quixote?</p>
-            </footer>
-
+        <div class="row header">
+            <!-- HEADER/TITLE -->
+            <h1>$$$ BLACKJACK $$$</h1>
         </div>
+        <div class="row message__box header">
+              <!-- SCRIPT BOX -->
+              <h2 id="messageBox"></h2>
+        </div>
+        <div class="row current__bet header">
+              <!-- CURRENT BET -->
+              <h3 id="currentBet"></h3>
+        </div>
+      </div>
+    </div>
+  </div>
     
-    </div>    
+  <div class="container pannels h-80">
+    <div class="row">
+          <div class="col">
+            <div class="row pannel__text">
+              <h3>PLAYER CARDS</h3>
+            </div>
+            <div class="row pannel__text">
+              <h4>Score: </h4>
+              <h4 id="playerPoints"></h4>
+            </div>
+            <div class="row">
+              <div class="player__pannel cards">
+                <img src="" alt="" class="playerHand">
+              </div>
+            </div>
+          </div>
+          <div class="col" style="justify-content: center;">
+            <div class="row pannel__text">
+              <h3>DEALER CARDS</h3>
+            </div>
+            <div class="row pannel__text">
+              <h4>Score: </h4>
+              <h4 id="dealerPoints"></h4>
+            </div>
+            <div class="row">
+              <div class="dealer__pannel cards">
+                <img src="" alt="" class="dealerHand">
+              </div>
+            </div>
+          </div>
+    </div>
+  </div>
+
+  <div class="background h-15 footer fixed-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="row">
+              <h5>Choose your next move: <strong>HIT</strong> or <strong>STAND</strong>?</h5>
+              <div class="col-6 mt-3 mb-3">
+                <button type="button" class="action__buttons btn btn-primary btn-lg" onclick="hit()">HIT</button>
+              </div>
+              <div class="col-6 mt-3 mb-3">
+                <button type="button" class="action__buttons btn btn-primary btn-lg" onclick="stand()">STAND</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-1"></div>
+
+          <div class="col-md-7">
+            <div class="row bank__total">
+              <div class="col-6">
+                <h5>How much do you want to <strong>BET?</strong></h5>
+              </div>
+              <div class="col-3" style="text-align: right;">
+                <p>Available: $</p>
+              </div>
+              <div class="col-3" style="text-align: left;">
+                <p id="totalInBank"></p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-2  mt-3">
+                <button type="button" class="bank__buttons btn btn-primary btn-lg button5" onclick="addFiveToBet()">5$</button>
+              </div>
+              <div class="col-2  mt-3">
+                <button type="button" class="bank__buttons btn btn-primary btn-lg button50" onclick="addFithtyToBet()">50$</button>
+              </div>
+              <div class="col-2  mt-3">
+                <button type="button" class="bank__buttons btn btn-primary btn-lg button100" onclick="addOneHundredToBet()">100$</button>
+              </div>
+              <div class="col-2  mt-3">
+                <button type="button" class="bank__buttons btn btn-primary btn-lg button500" onclick="addFiveHundredToBet()">500$</button>
+              </div>
+              <div class="col-1  mt-3"></div>
+              <div class="col-3  mt-3 buttons__betting">
+                <div class="row ">
+                    <button type="button" class="bet__button btn btn-lg" onclick="startGame()">BET</button>
+                </div>
+                <div class="row">
+                    <button type="button" class="reset__button btn btn-sm" onclick="resetCurrentBet()">RESET</button>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container nota__bene">
+        <div class="row">
+          <p>A game created by god knows who and brought to you by Tristan Calleja.<br/>
+            PS: Did you know that the first written reference to blackjack is found in a book by the Spanish 
+            author Miguel de Cervantes, most famous for writing Don Quixote?</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
         <!-- <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> -->
 
@@ -112,4 +147,5 @@
         <script src="./js/main.js"></script>
 
 </body>
+
 </html>
