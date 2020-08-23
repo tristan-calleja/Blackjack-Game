@@ -1,5 +1,7 @@
 # :spades: BLACKJACK GAME :spades:
 
+Play this game [here](https://tristan-calleja.github.io/Blackjack-Game/)
+
 ## MVPs:
 - Use Javascript to pick cards, display them and count
 - Create cards using html and css
